@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+
 import App from './App';
+import Provider from './component/myContext/Provider';
 import reportWebVitals from './reportWebVitals';
+import GlobalStyle from './component/globalStyle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <GlobalStyle>
+      <BrowserRouter>
+      <Provider>
+        <App />
+      </Provider>
+      </BrowserRouter>
+    </GlobalStyle>
   </React.StrictMode>
 );
 
