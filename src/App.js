@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import Footer from './component/Footer';
+import Footer from './component/footer/Footer';
 
 function App() {
 
