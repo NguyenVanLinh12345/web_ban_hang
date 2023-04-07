@@ -1,0 +1,45 @@
+.link {
+    color: var(--gray);
+    position: relative;
+    margin-right: 1.6rem;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.icon {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.name {
+    display: none;
+    min-width: 16rem;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.6rem;
+    color: white;
+    background-color: var(--black);
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+}
+.name::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--black);
+    border-top-left-radius: 90%;
+    bottom: -1rem;
+    left: calc(50% - 1rem);
+    transform: rotateZ(45deg);
+}
+
+.link:hover .icon{
+    color: var(--pink);
+}
+.link:hover .name{
+    display: block;
+}

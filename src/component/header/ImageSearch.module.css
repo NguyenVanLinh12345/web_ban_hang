@@ -1,0 +1,52 @@
+.image_search{
+    height: 40rem;
+    width: 32rem;
+    box-shadow: 0rem 0rem 0.8rem 0.4rem rgba(0, 0, 0, 0.4) inset;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.scan{
+    display: block;
+    color: white;
+    text-align: center;
+    margin: 20rem 0;
+    font-size: 4rem;
+}
+
+.searching{
+    z-index: 10;
+    height: 0.8rem;
+    right: 0;
+    left: 0;
+    background-color: lightblue;
+    border-radius: 0.1rem;
+    box-shadow: 0 0 0.4rem 0.2rem rgb(200, 200, 248);
+    animation: searching 5s infinite ;
+    position: absolute;
+}
+
+.searching::after, .searching::before{
+    content: '';
+    left: 0;
+    display: block;
+    height: 40rem;
+    width: 32rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+}
+.searching::before{
+    top: -40.8rem;
+}
+.searching::after{
+    top: 0.8rem; 
+}
+
+@keyframes searching {
+    from{
+        top: 0;
+    }
+    to{
+        top: 100%;
+    }
+}

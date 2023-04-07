@@ -1,0 +1,45 @@
+.footer{
+    background-color: rgb(235 235 235);
+}
+.title{
+    font-size: 1.6rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2rem;
+    font-family: 'Roboto Slab', sans-serif;
+    color: #1c1c1c;
+}
+.logo{
+    height: 6rem;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subscribe{
+    font-size: 1.4rem;
+    font-family: "Maven Pro", sans-serif;
+    color: var(--gray);
+}
+.subscribe_input{
+    width: 18rem;
+    border: none;
+    outline: none;
+    padding: 1.4rem 0.8rem;
+    font-size: 1.6rem;
+    color: var(--gray);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+.subscribe_btn{
+    width: 9.2rem;
+    font-size: 1.6rem;
+    padding: 1.4rem 0.8rem;
+    background-color: var(--pink);
+    border: 0.1rem solid rgb(238, 80, 217);
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    cursor: pointer;
+}

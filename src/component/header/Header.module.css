@@ -1,0 +1,89 @@
+.top_bar{
+    background-color: #252525;
+    height: 4rem;
+}
+
+.link{
+    color: lightgray;
+    line-height: 4rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin-right: 1.6rem;
+    position: relative;
+}
+
+.link:after{
+    content: "";
+    display: block;
+    width: 0.2rem;
+    height: 2rem;
+    background-color: lightgray;
+    position: absolute;
+    right: -0.8rem;
+    top: 0;
+}
+.link:last-child::after{
+    display: none;
+}
+
+.masthead{
+    background-size: cover;
+    padding: 2.2rem 0;
+}
+
+.logo{
+    width: 15.2rem;
+}
+
+.nav{
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 1.444rem;
+    font-weight: bold;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+    border-top-right-radius: 0.4rem;
+    border-top-left-radius: 0.4rem;
+}
+.nav::after{
+    content: "";
+    display: block;
+    height: 0.3rem;
+    background-image: url(http://mauweb.monamedia.net/stationery/wp-content/uploads/2019/05/bg-menu.jpg);
+    background-repeat: repeat;
+    background-position: center bottom;
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.nav_top_link{
+    display: inline-block;
+    text-decoration: none;
+    padding: 20px;
+    color: #555555;   
+}
+
+.search{
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_close{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.search_close:hover{
+    background-color: lightgray;
+}
