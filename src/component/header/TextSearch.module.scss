@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .container{
     box-shadow: 0 0 0.4rem 0.2rem lightgray;
     margin: 4rem 2rem;
@@ -46,4 +47,54 @@
     .container{
         flex-wrap: wrap;
     }
+=======
+.container{
+    box-shadow: 0 0 0.4rem 0.2rem lightgray;
+    margin: 4rem 2rem;
+    border-radius: 0.4rem;
+    display: flex;
+    justify-content: center;
+}
+.text, .button{
+    display: inline-block;
+    font-size: 2.4rem;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+}
+.text{
+    padding: 2rem 0.8rem;
+}
+
+.button{
+    padding: 2rem 3rem;
+    cursor: pointer;
+    border-left: 0.2rem solid rgba(230, 230, 230, 0.4);
+    // background-color: rgba(255, 255, 255, 0.1);
+}
+
+.wrap_icon{
+    padding: 0.8rem;
+    border-radius: 0.4rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
+.wrap_icon:hover{
+    background-color: gray;
+}
+.icon{
+    font-size: 4rem;
+    color: white;
+}
+
+@media screen and (max-width: 740px) {
+    .button{
+        border-left: none;
+        border-top: 0.2rem solid rgba(230, 230, 230, 0.4);
+    }
+    .container{
+        flex-wrap: wrap;
+    }
+>>>>>>> 49645612789691bcb586d9a3a0b43e0a2cc3aed6
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto+Slab&display=swap');
@@ -68,4 +69,76 @@ body{
 }
 .w100{
     width: 100%;
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&family=Roboto+Slab&display=swap');
+
+:root{
+    --black: rgb(0,0,0);
+    --pink: rgb(240, 98, 146);
+    --gray: gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+    background-color: rgb(245 245 245 / 36%);
+}
+
+.hiddenX{
+    overflow-x: hidden;
+}
+.flex{
+    display: flex;
+}
+.justify_content_center{
+    justify-content: center;
+}
+.space_between{
+    justify-content: space-between;
+}
+.space_around{
+    justify-content: space-around;
+}
+.align_items_center{
+    align-items: center;
+}
+.flex_wrap{
+    flex-wrap: wrap;
+}
+.pd_t40{
+    padding-top: 4rem;
+}
+.pd_bt40{
+    padding-bottom: 4rem;
+}
+
+.mg_l8{
+    margin-left: 0.8rem;
+}
+.mg_r8{
+    margin-right: 0.8rem;
+}
+.mg_l16{
+    margin-left: 1.6rem;
+}
+
+.w50{
+    width: 50%;
+}
+.w100{
+    width: 100%;
+>>>>>>> 49645612789691bcb586d9a3a0b43e0a2cc3aed6
 }
