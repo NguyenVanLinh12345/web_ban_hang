@@ -35,7 +35,7 @@ function Footer() {
                             <Row>
                                 {
                                     arr4.map((value, index) => (
-                                        <Col pc={4} table={4} mobie={4}>
+                                        <Col key={index} pc={4} table={4} mobie={4}>
                                             <ImageItem src={value.url} name={value.name} price={value.price} />
                                         </Col>
                                     ))
@@ -69,7 +69,7 @@ function Footer() {
                         <h2 className={style.title}>KẾT NỐI VỚI CHÚNG TÔI</h2>
                         <div>
                             {arr5.map((value, index)=>(
-                                <ContactItem icon={value.icon} name={value.name} url={value.url}/>
+                                <ContactItem key={index} icon={value.icon} name={value.name} url={value.url}/>
                             ))}
                         </div>
                     </Col>

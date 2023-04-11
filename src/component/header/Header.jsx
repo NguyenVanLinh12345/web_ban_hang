@@ -4,14 +4,21 @@ import Grid from '../Grid/Grid';
 import Row from '../Grid/Row';
 import Col from '../Grid/Col';
 import ImageSearch from './ImageSear';
+import TextSearch from './TextSearch';
 import { MdOutlineClose } from 'react-icons/md'
 
 import background from '../../asets/img/background.jpg';
 import logo from '../../asets/img/logo.png';
 import { arr1, arr2 } from './link';
+import { useState } from 'react';
 
 const urlImageSearch = "https://bantranh.com/wp-content/uploads/2019/04/tranh-ve-nui1-582x400.jpg";
 function Header() {
+
+    const [openSearch, setOpenSearch] = useState(false);
+    const [searchByImg, setSearchByImg] = useState(false);
+    const [searching, setSearching] = useState(false);
+    const [urlImage, setUrlImage] = useState(urlImageSearch);
 
     return (
         <header>
@@ -32,7 +39,6 @@ function Header() {
             <div className={style.masthead} style={{ backgroundImage: `url(${background})` }}>
                 <Grid>
                     <img className={style.logo} src={logo} alt="logo" />
-
                 </Grid>
             </div>
 
@@ -48,10 +54,15 @@ function Header() {
                 </div>
             </Grid>
 
-            <div className={style.search}>
-                <ImageSearch url={urlImageSearch} />
-                <span className={style.search_close}><MdOutlineClose style={{ fontSize: "3.2rem", color: "white" }} /></span>
-            </div>
+            {
+                openSearch
+                    ? <div className={`${style.search} flex space_around flex_wrap`}>
+                        <TextSearch urlImage={urlImage} setUrlImage={setUrlImage} setIsSearching={setSearching} openImg={setSearchByImg} />
+                        { searchByImg ? <ImageSearch searching={searching} url={urlImage} /> : ""}
+                        <span onClick={() => setOpenSearch(false)} className={style.search_close}><MdOutlineClose style={{ fontSize: "3.2rem", color: "white" }} /></span>
+                    </div>
+                    : ""
+            }
         </header>
     )
 }

@@ -31,8 +31,17 @@ body{
 .flex{
     display: flex;
 }
+.justify_content_center{
+    justify-content: center;
+}
 .space_between{
     justify-content: space-between;
+}
+.space_around{
+    justify-content: space-around;
+}
+.align_items_center{
+    align-items: center;
 }
 .flex_wrap{
     flex-wrap: wrap;

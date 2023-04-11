@@ -4,8 +4,19 @@
     box-shadow: 0rem 0rem 0.8rem 0.4rem rgba(0, 0, 0, 0.4) inset;
     position: relative;
     overflow-y: hidden;
+    background-position: center;
+    background-size: cover;
+    /* animation: floatLeft 0.8s ease-out infinite forwards; */
 }
 
+@keyframes floatLeft {
+    from{
+        right: -450rem;
+    }
+    to{
+        right: 0;
+    }
+}
 .scan{
     display: block;
     color: white;
@@ -22,7 +33,7 @@
     background-color: lightblue;
     border-radius: 0.1rem;
     box-shadow: 0 0 0.4rem 0.2rem rgb(200, 200, 248);
-    animation: searching 5s infinite ;
+    animation: searching 5s infinite linear;
     position: absolute;
 }
 
@@ -43,10 +54,13 @@
 }
 
 @keyframes searching {
-    from{
+    0%{
         top: 0;
     }
-    to{
+    50%{
         top: 100%;
+    }
+    100%{
+        top: 0;
     }
 }
