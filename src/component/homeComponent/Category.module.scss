@@ -1,0 +1,88 @@
+.category {
+    font-family: "Maven Pro";
+}
+
+.category {
+    li {
+        list-style-type: none;
+    }
+}
+
+.title {
+    font-family: "Roboto Slab", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    border-bottom: 0.1rem solid var(--pink);
+}
+
+.link {
+    position: relative;
+    display: block;
+    font-size: 1.4rem;
+    color: rgb(99, 99, 99);
+    padding: 1rem 1.5rem 1rem 1rem;
+    text-decoration: none;
+}
+
+.main_li {
+    border-bottom: 0.1rem solid rgba(99, 99, 99, 0.175);
+}
+
+.link:hover {
+    background-color: rgba(99, 99, 99, 0.1);
+    color: #f06292;
+}
+
+.main_li:hover {
+    background-color: rgba(99, 99, 99, 0.175);
+    color: #f06292;
+}
+
+.main_li:last-child {
+    border-bottom: 0.1rem solid var(--pink);
+}
+
+.wrapIcon {
+    position: absolute;
+    right: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    padding: 0rem 0.8rem;
+    background-color: rgb(240, 98, 146);
+    border-radius: 0.4rem;
+}
+
+.icon {
+    font-weight: bold;
+    color: white;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+
+.hidden_element {
+    position: absolute;
+    width: 28rem;
+    right: -28rem;
+    top: 0;
+    box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, .175);
+    display: none;
+    background-color: white;
+}
+
+.link:hover>.hidden_element {
+    display: block;
+}
+
+// .hidden_element::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     top: 0;
+//     left: -10rem;
+//     background-color: lightcoral;
+//     height: 100%;
+//     width: 12rem;
+// }

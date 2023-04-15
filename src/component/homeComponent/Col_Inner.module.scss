@@ -1,0 +1,30 @@
+.container{
+    width:  27rem;
+    height: 27rem;
+    overflow: hidden;
+}
+.banner_link{
+    background-position: center;
+    background-size: cover;
+    width:  27rem;
+    height: 27rem;
+}
+
+.banner_link{
+    font-family: "Maven Pro", sans-serif;
+    p{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+}
+.container:hover .banner_link{
+    transform: scale(1.5);
+}
+
+.title{
+    text-transform: uppercase;
+    color: var(--pink);
+    font-family: "Roboto Slab", sans-serif;
+}

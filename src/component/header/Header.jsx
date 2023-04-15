@@ -15,9 +15,9 @@ import { useState } from 'react';
 const urlImageSearch = "https://bantranh.com/wp-content/uploads/2019/04/tranh-ve-nui1-582x400.jpg";
 function Header() {
 
-    const [openSearch, setOpenSearch] = useState(true);
+    const [openSearch, setOpenSearch] = useState(false);
     const [searchByImg, setSearchByImg] = useState(false);
-    const [searching, setSearching] = useState();
+    const [searching, setSearching] = useState(false);
     const [urlImage, setUrlImage] = useState(urlImageSearch);
 
     return (
