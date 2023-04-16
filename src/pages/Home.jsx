@@ -4,6 +4,7 @@ import Col from '../component/Grid/Col';
 import Row from '../component/Grid/Row';
 import Category from "../component/homeComponent/Category";
 import ColInner from "../component/homeComponent/ColInner";
+import MainSlide from "../component/homeComponent/MainSlide";
 function Home() {
 
 
@@ -15,7 +16,7 @@ function Home() {
                         <Category />
                     </Col>
                     <Col pc={9} table={12} mobie={12}>
-
+                        <MainSlide />
                     </Col>
                 </Row>
 

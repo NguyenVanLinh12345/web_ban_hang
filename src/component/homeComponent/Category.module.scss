@@ -70,19 +70,9 @@
     box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, .175);
     display: none;
     background-color: white;
+    z-index: 2;
 }
 
 .link:hover>.hidden_element {
     display: block;
 }
-
-// .hidden_element::after {
-//     content: "";
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: -10rem;
-//     background-color: lightcoral;
-//     height: 100%;
-//     width: 12rem;
-// }

@@ -1,30 +1,270 @@
-.container{
-    width:  27rem;
+.border_bottom_gray {
+    border-bottom: 0.1rem solid var(--gray);
+    padding-bottom: 1.6rem;
+}
+
+.container {
+    width: 27rem;
     height: 27rem;
     overflow: hidden;
 }
-.banner_link{
+
+.banner_link {
     background-position: center;
     background-size: cover;
-    width:  27rem;
+    display: block;
+    width: 27rem;
     height: 27rem;
 }
 
-.banner_link{
+.banner_link {
     font-family: "Maven Pro", sans-serif;
-    p{
-        font-size: 2rem;
+    transition: transform 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 0.4rem 13.5rem rgba(#f06292, 0.4) inset;
+
+    p {
+        font-size: 2.8rem;
     }
-    h1{
-        font-size: 4rem;
+
+    h1 {
+        font-size: 4.4rem;
     }
-}
-.container:hover .banner_link{
-    transform: scale(1.5);
 }
 
-.title{
+.container:hover .banner_link {
+    transform: scale(1.2);
+}
+
+.title {
     text-transform: uppercase;
     color: var(--pink);
     font-family: "Roboto Slab", sans-serif;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.ban_chay {
+    ul {
+
+        li {
+            list-style-type: none;
+            margin-top: 1.6rem;
+
+            a {
+                text-decoration: none;
+                display: flex;
+                font-family: "Maven Pro", sans-serif;
+
+                .item_img {
+                    height: 6rem;
+                    width: 6rem;
+                    border: 0.1rem solid var(--gray);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .item_text {
+                    margin-left: 1.6rem;
+
+                    h1 {
+                        font-size: 1.6rem;
+                        color: #636363;
+                    }
+
+                    h2 {
+                        font-size: 1.8rem;
+                        color: #111;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tin_tuc {
+    position: relative;
+
+    .tin_tuc_wrap {
+        overflow-x: hidden;
+        width: 27rem;
+        margin-top: 1.6rem;
+
+        ul {
+            display: flex;
+            // transform: translateX(-20rem);
+            transition: transform 0.8s;
+
+            li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+
+                    .tin_tuc_img {
+                        height: 27rem;
+                        width: 27rem;
+                        background-position: center;
+                        background-size: cover;
+                        transition: opacity 0.4s;
+                    }
+
+                    h1 {
+                        color: #1c1c1c;
+                        font-family: "Roboto Slab", sans-serif;
+                        font-size: 1.656rem;
+                        margin-top: 1.2rem;
+                    }
+
+                    p {
+                        font-size: 1.44rem;
+                        margin-top: 1.6rem;
+                        font-family: "Maven Pro", sans-serif;
+                        color: #353535;
+                        transition: color 0.4s;
+                    }
+                }
+            }
+        }
+    }
+
+    .tin_tuc_control {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        font-size: 3.2rem;
+        line-height: 100%;
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+        border-radius: 0.8rem;
+        padding: 0.8rem;
+        cursor: pointer;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .tin_tuc_control_left {
+        left: 0.4rem;
+    }
+
+    .tin_tuc_control_right {
+        right: 1.4rem;
+    }
+
+    .tin_tuc_wrap:hover {
+        .tin_tuc_img {
+            opacity: 0.8;
+        }
+
+        p {
+            color: var(--pink);
+        }
+    }
+}
+
+.tin_tuc:hover {
+    .tin_tuc_control {
+        display: block;
+    }
+
+    .tin_tuc_control_left {
+        left: 1rem;
+    }
+
+    .tin_tuc_control_right {
+        right: 2rem;
+    }
+}
+
+.dang_ki_nhan_tin {
+    margin-top: 2rem;
+    font-family: "Roboto Slab", sans-serif;
+    color: white;
+    background-color: var(--pink);
+    text-align: center;
+    padding: 1.2rem 0.8rem;
+
+    h1 {
+        font-size: 1.92rem;
+    }
+
+    p,
+    input,
+    button {
+        margin-top: 0.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    input {
+        color: black;
+        font-size: 1.6rem;
+        padding: 0.8rem 0.8rem;
+        width: 100%;
+        outline: none;
+        border: none;
+    }
+
+    button {
+        border: 0.2rem solid white;
+        padding: 0.6rem 1.2rem;
+        background-color: rgba(0, 0, 0, 0);
+        color: white;
+    }
+}
+
+.nhan_xet {
+    .nhan_xet_wrap {
+        overflow-x: hidden;
+        width: 27rem;
+        ul {
+            display: flex;
+            transition: transform 0.8s;
+
+            li {
+                width: 27rem;
+                display: flex;
+                list-style-type: none;
+                padding-top: 0.8rem;
+                padding-bottom: 0.8;
+
+                .nhan_xet_img {
+                    height: 8rem;
+                    width: 8rem;
+                    background-position: center;
+                    background-size: cover;
+                    border-radius: 50%;
+                    border: 0.1rem solid var(--gray);
+                }
+
+                .nhan_xet_text {
+                    width: 17rem;
+                    margin-left: 2rem;
+
+                    .nhan_xet_mo_ta {
+                        font-style: italic;
+                        font-size: 1.2rem;
+                        margin-bottom: 0.8rem;
+                    }
+
+                    .nhan_xet_ten {
+                        font-weight: bold;
+                        font-size: 1.4rem;
+                    }
+
+                    .nhan_xet_chuc_vu {
+                        font-size: 1.4rem;
+                    }
+                }
+
+            }
+        }
+    }
 }

@@ -1,0 +1,38 @@
+.slider {
+    position: relative;
+    height: 43.2rem;
+    // height: 60vh;
+    border-radius: 0.8rem;
+    overflow: hidden;
+
+    .image {
+        height: 43.2rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .slider_buttons {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 4rem;
+        font-weight: bold;
+        color: white;
+        border: 0.2rem solid white;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .left {
+        left: 2rem;
+    }
+
+    .right {
+        right: 2rem;
+    }
+}
