@@ -13,16 +13,17 @@ import Footer from './component/footer/Footer';
 function App() {
 
   return (
-    <div id = "Main">
+    <div id="Main">
       <Header />
       <Routes>
-        <Route path='/' element = {<Home/>} />
-        <Route path='/products/:mainPath/:path' element = {<Products/>} />
-        <Route path='/product/:id' element = {<Product/>} />
-        <Route path='/cart' element = {<Cart/>} />
-        <Route path='/news' element={<News/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/about' element={<About/>}/>
+        <Route path='/*' element={<Home />} />
+        <Route path='/products/*' element={<Products element={<Products />} />} />
+        <Route path='/products/:mainPath/:path' />
+        <Route path='/product/:id' element={<Product />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/news' element={<News />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/about' element={<About />} />
       </Routes>
 
       <Footer />

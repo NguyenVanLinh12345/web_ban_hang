@@ -25,8 +25,8 @@ const arr2 = [
         url: "/"
     },
     { 
-        name: "TRANG CHU",
-        url: "/"
+        name: "Cua hang",
+        url: "/products"
     },
     { 
         name: "TRANG CHU",

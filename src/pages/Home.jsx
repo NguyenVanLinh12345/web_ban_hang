@@ -5,6 +5,7 @@ import Row from '../component/Grid/Row';
 import Category from "../component/homeComponent/Category";
 import ColInner from "../component/homeComponent/ColInner";
 import MainSlide from "../component/homeComponent/MainSlide";
+import HomeListItem from "../component/homeComponent/HomeListItem";
 function Home() {
 
 
@@ -25,7 +26,8 @@ function Home() {
                         <ColInner />
                     </Col>
                     <Col pc={9} table={12} mobie={12}>
-
+                        <HomeListItem />
+                        <HomeListItem title={"San pham ban chay"}/>
                     </Col>
                 </Row>
             </Grid>
