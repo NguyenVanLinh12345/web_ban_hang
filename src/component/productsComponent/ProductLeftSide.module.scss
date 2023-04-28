@@ -1,0 +1,41 @@
+.product_left_side {
+    font-family: "Maven Pro", sans-serif;
+}
+
+.title {
+    text-transform: uppercase;
+    color: #353535;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.danh_muc {
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: rgba(221, 221, 221, 0);
+
+    a, span {
+        color: #636363;
+        text-decoration: none;
+        border-bottom: 0.1rem dotted rgba(155, 155, 155, 0.4);
+        line-height: 1.6;
+        display: block;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .link {
+        padding: 0.6rem 1rem;
+        font-size: 14px;
+
+    }
+
+    .danh_muc_con {
+        .link_con {
+            font-size: 0.9rem;
+        }
+    }
+}

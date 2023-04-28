@@ -5,7 +5,8 @@ import Col from '../component/Grid/Col';
 import Row from '../component/Grid/Row';
 import ProductsListItem from "../component/productsComponent/ProductsListItem";
 import ProductsControl from "../component/productsComponent/ProductsControl";
-function Products({ }) {
+import ProducsLeftSide from "../component/productsComponent/ProductsLeftSide";
+function Products() {
     let { mainPath, path } = useParams();
     if (mainPath)
         console.log(mainPath);
@@ -21,6 +22,7 @@ function Products({ }) {
                 </Row>
                 <Row>
                     <Col myClass="" pc={3} table={3} mobie={0}>
+                        <ProducsLeftSide />
                     </Col>
                     <Col myClass="" pc={9} table={9} mobie={12}>
                         <ProductsListItem />
