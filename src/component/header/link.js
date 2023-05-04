@@ -21,20 +21,20 @@ const arr2 = [
         url: "/"
     },
     { 
-        name: "TRANG CHU",
-        url: "/"
+        name: "Gioi thieu",
+        url: "/about"
     },
     { 
         name: "Cua hang",
         url: "/products"
     },
     { 
-        name: "TRANG CHU",
-        url: "/"
+        name: "Tin tuc",
+        url: "/news"
     },
     { 
-        name: "TRANG CHU",
-        url: "/"
+        name: "Lien he",
+        url: "/contact"
     }
 ]
 export {arr1, arr2};

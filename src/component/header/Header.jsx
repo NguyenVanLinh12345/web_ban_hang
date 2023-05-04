@@ -5,7 +5,8 @@ import Row from '../Grid/Row';
 import Col from '../Grid/Col';
 import ImageSearch from './ImageSear';
 import TextSearch from './TextSearch';
-import { MdOutlineClose } from 'react-icons/md'
+import { MdOutlineClose } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
 import background from '../../asets/img/background.jpg';
 import logo from '../../asets/img/logo.png';
@@ -47,7 +48,7 @@ function Header() {
                     <ul>
                         {
                             arr2.map((value, index) => (
-                                <a key={index} href={value.url} className={style.nav_top_link}>{value.name}</a>
+                                <Link key={index} to={value.url} className={style.nav_top_link}>{value.name}</Link>
                             ))
                         }
                     </ul>
