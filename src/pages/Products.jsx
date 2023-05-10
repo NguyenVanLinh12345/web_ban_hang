@@ -17,7 +17,7 @@ function Products() {
             <Grid>
                 <Row>
                     <Col myClass="" pc={12} table={12} mobie={12}>
-                        <ProductsControl />
+                        <ProductsControl numberResult={10}/>
                     </Col>
                 </Row>
                 <Row>

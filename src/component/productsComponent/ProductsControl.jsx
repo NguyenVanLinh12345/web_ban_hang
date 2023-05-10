@@ -15,7 +15,7 @@ function ProductsControl({numberResult}){
             <select name="" id="">
                 {
                     arr.map(value=>(
-                        <option value={value.id}>{value.name}</option>
+                        <option key={value.id} value={value.id}>{value.name}</option>
                     ))
                 }
             </select>

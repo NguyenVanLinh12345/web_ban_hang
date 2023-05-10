@@ -8,6 +8,7 @@ function Contact() {
         <Grid>
             <Row>
                 <Col pc={3} table={4} mobie={0}>
+                    lien he
                 </Col>
                 <Col pc={9} table={8} mobie={12}>
                 </Col>
