@@ -11,6 +11,11 @@ import { FiLogOut } from 'react-icons/fi';
 
 function AdminSidebar({name= "Nguyen Van A"}){
 
+    const logout = ()=>{
+        localStorage.removeItem('admin');
+        window.location.reload();
+    }
+
     return(
         <div className={style.admin_side_bar}>
             <h2 className={style.people}>{name}</h2>
@@ -36,7 +41,7 @@ function AdminSidebar({name= "Nguyen Van A"}){
                         <Link to="/admin/AdminNew" className={style.nav_item}><AiOutlineWallet className={style.nav_icon}/>News</Link>
                     </li>
                 </ul>
-                <button className={style.logout}><FiLogOut />Logout</button>
+                <button onClick={logout} className={style.logout}><FiLogOut />Logout</button>
             </div>
         </div>
     )

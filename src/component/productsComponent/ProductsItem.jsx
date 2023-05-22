@@ -3,12 +3,12 @@ import ShowPrice from '../globalFunction/ShowPrice';
 
 import { Link } from 'react-router-dom';
 
-function ProductsItem({ imgUrl, name, price }) {
+function ProductsItem({ imgUrl, name, price, to }) {
 
     return (
-        <Link className={style.products_item}>
+        <Link to={to} className={style.products_item}>
             <div className={style.wrap_img}>
-                <div className={style.img} style={{ backgroundImage: `url(${imgUrl})` }} />
+                <div className={style.img} style={{backgroundImage: `url(${imgUrl})`}}/>
             </div>
             <h1 className={style.name}>{name}</h1>
             <h2 className={style.price}>{ShowPrice(price)} <span>đ</span></h2>

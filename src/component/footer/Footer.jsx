@@ -11,8 +11,34 @@ import { VscBook } from "react-icons/vsc";
 import { arr1, arr2, arr3, arr4, arr5 } from './link';
 import logo from '../../asets/img/logo.png';
 import paymetod from '../../asets/img/pay_method/image-paypal.png';
+import { useState } from 'react';
 
 function Footer() {
+    const [emailDanhKi, setEmailDangKi] = useState("");
+
+    const dangkimail = ()=>{
+        const data = { email: emailDanhKi };
+
+            fetch('http://localhost:8080/emaildangki', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('There was an error!', error);
+                });
+        }
 
     return (
         <footer className={style.footer}>
@@ -86,8 +112,8 @@ function Footer() {
                                 </Col>
                                 <Col pc={6} table={6} mobie={12}>
                                     <div>
-                                        <input placeholder='email...' className={style.subscribe_input} type="text" />
-                                        <button className={style.subscribe_btn}>ĐĂNG KÝ</button>
+                                        <input onChange={(e)=>setEmailDangKi(e.target.value)} value={emailDanhKi} placeholder='email...' className={style.subscribe_input} type="text" />
+                                        <button onClick={dangkimail} className={style.subscribe_btn}>ĐĂNG KÝ</button>
                                     </div>
                                 </Col>
                             </Row>

@@ -1,0 +1,89 @@
+.client_login{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrap{
+        width: 56rem;
+        border-radius: 0.8rem;
+        background-color: rgb(23, 9, 22);
+   
+    }
+    .icon{
+        font-size: 4rem;
+        font-weight: 700;
+        color: white;
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        cursor: pointer;
+        transition: all 0.4s;
+        border: 0.2rem;
+
+        &:hover{
+            background-color: aliceblue;
+            color: var(--pink);
+        }
+    }
+
+}
+
+.the_tren{
+    margin-top: 4rem;
+    padding: 1.2rem 1.6rem;
+    border: none;
+    margin-right: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    font-size: 1.6rem;
+    background-color: white;
+}
+.conntainer{
+    padding: 1.2rem;
+}
+
+.mo_ta{
+    padding: 2.8rem;
+    font-size: 2rem;
+}
+
+.dangNhap{
+
+    div{
+    margin-top: 1.2rem;
+        label{
+            width: 12rem;
+            color: white;
+            font-size: 2rem;
+            
+        }
+        input{
+            width: calc(100% - 12rem);
+            padding: 1.2rem 0.8rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    button{
+        margin-top: 4rem;
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        background-color: var(--pink);
+        color: white;
+    }
+}
+
+.dang_ki{
+    @extend .dangNhap;
+    label{
+        width: 24rem;
+    }
+}

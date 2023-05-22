@@ -6,7 +6,6 @@ import Client from './pages/Client';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import Products from './pages/Products';
-import Cart from './pages/Cart';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import News from './pages/News';
@@ -34,8 +33,8 @@ function App() {
         <Route path='/*' element={ <Client><Home /></Client>} />
         <Route path='/products/*' element={<Client><Products /></Client>} />
         <Route path='/product/:id' element={<Client><Product /></Client>} />
-        {/* <Route path='/products/:mainPath/:path' /> */}
-        <Route path='/cart' element={<Client><Cart /></Client>} />
+        {/* <Route path='/product/:id/:danhmucid' element={<Client><Product /></Client>} /> */}
+        <Route path='/products/:id' element={<Client><Products /></Client>} />
         <Route path='/news' element={<Client><News /></Client>} />
         <Route path='/contact' element={<Client><Contact /></Client>} />
         <Route path='/about' element={<Client><About /></Client>} />

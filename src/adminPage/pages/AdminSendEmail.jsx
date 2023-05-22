@@ -98,11 +98,6 @@ function AdminSendEmail() {
                 <span onClick={()=>setSend("")}><AiOutlineCloseCircle className={style.iconDeleteSend}/></span>
             
             <div className={style.guiEmail}>
-            <select name="" id="">
-                <option value="1">Tat ca khach hang</option>
-                <option value="2">Khach hang da dang ki</option>
-                <option value="3">Khach hang chua dang ki</option>
-            </select>
             <button onClick={guiEmail}>Gui email</button>
             </div>
         </div>

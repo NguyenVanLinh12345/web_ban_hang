@@ -1,0 +1,78 @@
+.the_tren {
+    margin-top: 4rem;
+    padding: 1.2rem 1.6rem;
+    border-left: 0.2rem solid lightgray;
+    border-right: 0.2rem solid lightgray;
+    border-top: 0.2rem solid lightgray;
+    margin-right: 0.8rem;
+    transform: translateY(0.3rem);
+    font-size: 1.6rem;
+    background-color: white;
+    border-bottom: none;
+}
+
+.conntainer {
+    border: 0.2rem solid lightgray;
+    min-height: 40rem;
+}
+
+.mo_ta {
+    padding: 2.8rem;
+    font-size: 2rem;
+}
+
+.binh_luan {
+    width: calc(100% - 10rem);
+    box-shadow: 0 0.1rem 0.2rem 0.1rem gray;
+    padding: 1.2rem;
+    // border-radius: 0.8rem;
+    margin: 2rem auto;
+
+    h3 {
+        color: lightgray;
+        font-size: 1.2rem;
+    }
+
+    p {
+        border: 0.1rem solid gray;
+        border-radius: 0.4rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 1.6rem;
+    }
+
+}
+
+.them_binh_luan {
+    div {
+        margin: 1.2rem 2.4rem; 
+
+        input {
+            border: 0.1rem solid gray;
+            border-radius: 0.4rem;
+            padding: 0.8rem 1.2rem;
+            font-size: 1.6rem;
+            width: 100%;
+        }
+
+        label {
+            font-size: 2.4rem;
+        }
+    }
+
+    .cho_noi_dung {
+        border: 0.1rem solid gray;
+        border-radius: 0.4rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 1.6rem;
+    }
+
+    button{
+        padding: 1.2rem 1.6rem;
+        background-color: var(--pink);
+        border: none;
+        border-radius: 0.4rem;
+        font-size: 2rem;
+        display: block;
+        margin: 1.2rem auto 0;
+    }
+}

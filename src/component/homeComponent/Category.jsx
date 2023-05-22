@@ -12,11 +12,11 @@ function Category() {
                 {
                     danhsach.map((value, index) =>
                     (<li className={style.main_li} key={index}>
-                        <Link className={style.link} to={`/products/${value.path}`}>
+                        <Link className={style.link} to={`/products/${value.id}`}>
                             <span>{value.name}</span>
                             <span className={style.wrapIcon}><MdKeyboardArrowRight className={style.icon} /></span>
 
-                            <ul className={style.hidden_element}>
+                            {/* <ul className={style.hidden_element}>
                                 {
                                     value.arr.map((value1, index1) => (
                                         <li key={index1}>
@@ -24,7 +24,7 @@ function Category() {
                                         </li>
                                     ))
                                 }
-                            </ul>
+                            </ul> */}
                         </Link>
                     </li>
                     ))

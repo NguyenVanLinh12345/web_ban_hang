@@ -24,6 +24,9 @@ body{
     text-rendering: optimizeSpeed;
     background-color: rgb(245 245 245 / 36%);
 }
+.bg_lgray{
+    background-color: lightgray;
+}
 
 .hiddenX{
     overflow-x: hidden;
@@ -52,7 +55,12 @@ body{
 .pd_bt40{
     padding-bottom: 4rem;
 }
-
+.mg_t40{
+    margin-top: 4rem;
+}
+.mg_bt40{
+    margin-bottom: 4rem;
+}
 .mg_l8{
     margin-left: 0.8rem;
 }
