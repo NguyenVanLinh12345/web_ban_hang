@@ -16,6 +16,7 @@ import AdminNew from './adminPage/pages/AdminNew';
 import AdminSendEmail from './adminPage/pages/AdminSendEmail';
 import AdminUsers from './adminPage/pages/AdminUsers';
 import AdminProducts from './adminPage/pages/AdminProducts';
+import Cart from './pages/Cart';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
         <Route path='/news' element={<Client><News /></Client>} />
         <Route path='/contact' element={<Client><Contact /></Client>} />
         <Route path='/about' element={<Client><About /></Client>} />
+        <Route path='/cart' element={<Client><Cart /></Client>} />
       </Routes>
     </div>
   );

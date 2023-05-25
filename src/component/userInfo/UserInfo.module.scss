@@ -13,7 +13,7 @@
         position: absolute;
         right: 0;
         background-color: white;
-        width: 40rem;
+        width: 80rem;
         height: 100%;
         overflow-y: auto;
 
@@ -21,32 +21,34 @@
         animation-duration: 0.4s;
         animation-fill-mode: forwards;
 
-        h1{
+        h1 {
             margin-left: 1.2rem;
             margin-bottom: 1.2rem;
         }
+
         &::-webkit-scrollbar {
             width: 0.4rem;
-          }
+        }
+
         /* Track */
         &::-webkit-scrollbar-track {
             background: lightgray;
         }
-        
+
         /* Handle */
         &::-webkit-scrollbar-thumb {
             border-radius: 0.4rem;
             background: gray;
             opacity: 0.5;
         }
-        
+
         /* Handle on hover */
         &::-webkit-scrollbar-thumb:hover {
             opacity: 1;
         }
-        
 
-        .cart_close{
+
+        .cart_close {
             font-size: 3.2rem;
             font-weight: bol;
             color: black;
@@ -54,61 +56,62 @@
             top: 2rem;
             right: 2rem;
             transition: color 0.1s;
-            &:hover{
+
+            &:hover {
                 color: var(--pink);
                 border: 0.1rem solid var(--pink);
                 border-radius: 0.4rem;
             }
         }
-        .cart_item {
-           margin-top: 2rem;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 2rem;
-            width: 24rem;
 
-            box-shadow: 0 0 0.2rem 0.1rem rgba(76, 65, 65, 0.4);
-            .cart_img {
-                height: 20rem;
-                width: 20rem;
+        .user_info {
+            .avatar {
+                height: 12rem;
+                width: 12rem;
+                border-radius: 50%;
                 background-position: center;
                 background-size: cover;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+
+                label {
+                    position: absolute;
+                    bottom: 0;
+                    font-size: 2rem;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    display: block;
+                    color: white;
+                    width: 12rem;
+                    height: 3.6rem;
+                    text-align: center;
+                    cursor: pointer;
+                }
             }
 
-            .cart_text {
-
-
-                .ten_san_pham {
-                    color: black;
-                    font-size: 1.6rem;
-                    transition: color 0.4s;
-                     &:hover {
-                        text-decoration: underline;
-                        color: var(--pink);
-                    }
-                }
-
-                h3 {}
-
-                span {
-                    
+            .text {
+                font-size: 1.5rem;
+                margin: 2rem 1.6rem;
+                label {
+                    display: block;
+                    font-weight: 700;
                 }
 
                 input {
-                    border: none;
-                    border-bottom: 0.2rem solid gray;
-                    outline: none;
-                    text-align: center;
+                    width: 100%;
+                    color: #050505;
+                    padding: 0.8rem 1.2rem;
                 }
-
-                h5 {
-                    text-align: center;
-                    padding: 0.8rem;
-                    border: 0.2rem solid var(--pink);
-                    border-radius: 0.8rem;
-                    margin-top: 0.8rem;
-                }
-
+            }
+            button{
+                display: block;
+                margin: 2rem auto 0;
+                font-size: 2rem;
+                background-color: var(--pink);
+                border: none;
+                padding: 1.2rem 1.6rem;
+                color: white;
+                text-transform: uppercase;
             }
         }
     }
@@ -119,10 +122,9 @@
         right: -34rem;
         opacity: 0;
     }
-    
+
     to {
         right: 0;
         opacity: 1;
     }
 }
-

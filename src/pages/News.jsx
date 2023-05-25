@@ -9,8 +9,10 @@ function News() {
         <Grid>
             <Row>
                 <Col pc={3} table={4} mobie={0}>
+                    
                 </Col>
                 <Col pc={9} table={8} mobie={12}>
+                    <MainNew ></MainNew>
                     <MainNew ></MainNew>
                 </Col>
             </Row>

@@ -5,11 +5,12 @@ import Row from '../Grid/Row';
 import Col from '../Grid/Col';
 import ImageSearch from './ImageSear';
 import TextSearch from './TextSearch';
-import Cart from '../cartComponent/Cart';
+import UserInfo from '../userInfo/UserInfo';
 
 import { MdOutlineClose } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { HiOutlineMagnifyingGlass } from 'react-icons/hi2';
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 import background from '../../asets/img/background.jpg';
 import logo from '../../asets/img/logo.png';
@@ -59,8 +60,11 @@ function Header({ login }) {
                                 checkLogin
                                     ?
                                     <ul className={style.thanh_tieu_de_ul}>
-                                        <li onClick={()=>setOpenCart(true)} className={style.thanh_tieu_de_li}>Gio hang</li>
-                                        <li onClick={logout} className={style.thanh_tieu_de_li}>Dang xuat</li>
+                                        <li onClick={()=>setOpenCart(true)} className={style.thanh_tieu_de_li}>Thông tin</li>
+                                        <li onClick={logout} className={style.thanh_tieu_de_li}>Đăng xuất</li>
+                                        <li className={style.thanh_tieu_de_li}>
+                                            <Link to={'./cart'}><AiOutlineShoppingCart /></Link>
+                                        </li>
                                     </ul>
                                     :
                                     <btn onClick={() => setCheckLogin(true)} className={style.dang_nhap}>Đăng nhập</btn>
@@ -97,7 +101,7 @@ function Header({ login }) {
             {
                 openCart
                     ?
-                    <Cart closeCartFunc={()=>setOpenCart(false)}/>
+                    <UserInfo closeCartFunc={()=>setOpenCart(false)}/>
                     :
                     ""
             }

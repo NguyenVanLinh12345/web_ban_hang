@@ -1,0 +1,25 @@
+.so_luong{
+    display: inline;
+    font-size: 1.2rem;
+}
+.so_luong_input {
+    display: inline-block;
+    width: 12rem;
+    border: none;
+    border-bottom: 0.2rem solid gray;
+    outline: none;
+    text-align: center;
+}
+.choose {
+    text-align: center;
+    padding: 0.8rem;
+    border: 0.2rem solid var(--pink);
+    border-radius: 0.8rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    transition: all 0.1s;
+
+    &:hover{
+        background-color: var(--pink);
+    }
+}

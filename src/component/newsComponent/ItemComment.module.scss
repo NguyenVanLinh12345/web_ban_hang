@@ -1,0 +1,46 @@
+$comment-gray: rgba(236, 235, 235, 0.8);
+
+.item_comment0{
+    margin-bottom: 2rem;
+    .item_comment {
+        display: inline-flex;
+        background-color: $comment-gray;
+        padding: 0.8rem 1.2rem;
+        border-radius: 1.2rem;
+        
+        .item_comment_image {
+            height: 4rem;
+            width: 4rem;
+            background-position: center;
+            background-size: cover;
+            border-radius: 50%;
+        }
+        
+        .item_comment_text {
+            align-self: center;
+            margin-left: 0.8rem;
+            width: calc(100% - 4rem);
+            h3 {
+                
+                span {
+                    font-size: 1.2rem;
+                    color: gray;
+                    margin-left: 0.8rem;
+                    padding-left: 0.8rem;
+                    border-left: 0.1rem solid gray;
+                }
+            }
+            
+            p {
+                font-size: 1.5rem;
+                color: #050505;
+            }
+        }
+    }
+    .anh_comment{
+        width: 8rem;
+        margin-left: 2rem;
+        border: 0.4rem solid rgb(153, 146, 255);
+        border-radius: 0.8rem;
+    }
+}
